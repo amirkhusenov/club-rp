@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
     <script src="./script.js" defer></script>
 </head>
 
@@ -47,10 +49,10 @@
                             <summary class="hero__lang-summary">RU</summary>
                             <ul class="hero__lang-list">
                                 <li class="hero__lang-item">
-                                    <button class="hero__lang-option">RU</button>
+                                    <button class="hero__lang-option">ES</button>
                                 </li>
                                 <li class="hero__lang-item">
-                                    <button class="hero__lang-option">EN</button>
+                                    <button class="hero__lang-option">UA</button>
                                 </li>
                             </ul>
                         </details>
@@ -131,11 +133,11 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <div class="transition-section hero-to-about-transition">
-        <img src="./img/footer/transition.svg" alt="transition" class="transition__image">
-    </div>
+        <div class="transition-section hero-to-about-transition">
+            <img src="./img/footer/transition.svg" alt="transition" class="transition__image">
+        </div>
+    </section>
 
     <section class="about">
         <div class="about__content">
@@ -217,13 +219,13 @@
         </div>
     </section>
 
-    <div class="transition-section">
-        <img src="./img/svg/transition-2.svg" alt="transition" class="transition__image">
-        <img src="./img/guide/circle-bg.svg" alt="circle" class="transition__circle transition__circle--left">
-        <img src="./img/guide/circle-bg.svg" alt="circle" class="transition__circle transition__circle--right">
+    <div class="transition-section about-to-guide-transition">
+        <img src="./img/svg/transition-2.svg" alt="transition" class="about-to-guide-transition__image">
     </div>
 
     <section class="guide">
+        <img src="./img/guide/circle-bg.svg" alt="circle" class="guide__circle guide__circle--left">
+        <img src="./img/guide/circle-bg.svg" alt="circle" class="guide__circle guide__circle--right">
         <img src="./img/card-element-4.png" alt="" class="guide__decoration guide__decoration--left">
         <img src="./img/card-element-4.png" alt="" class="guide__decoration guide__decoration--right">
         <div class="guide__content">
@@ -703,8 +705,9 @@
                         <div class="faq__card faq__card--left-bottom">
                             <div class="faq__card-number">05</div>
                             <h3 class="faq__card-title">Чем можно заняться <br>на CLUB?</h3>
-                            <p class="faq__card-description">И ролей доступны десятки разнообразных профессий, от легких
-                                развлекательных и творческих...</p>
+                            <p class="faq__card-description">Игрокам доступны десятки разнообразных профессий, активное
+                                взаимодействие с другими пользователями, частые обновления контента и тематические
+                                сезонные события.</p>
                         </div>
 
                         <div class="faq__card faq__card--right-bottom">
@@ -724,40 +727,47 @@
             <footer class="footer">
                 <div class="footer__container">
                     <div class="footer__top">
-                        <div class="footer__left">
-                            <div class="hero__logo"><img src="./img/svg/logo.svg" alt="logo" class="hero__logo-img">
+                        <div class="footer__main">
+                            <div class="footer__left">
+                                <div class="hero__logo"><img src="./img/svg/logo.svg" alt="logo" class="hero__logo-img">
+                                </div>
+                                <p class="footer__email">help@rpclub.ru</p>
+                                <p class="footer__description">CLUB RP is not affiliated with or endorsed by Take-Two,
+                                    Rockstar
+                                    Interactive, or any respective subsidiaries, entities, or individuals belonging to
+                                    their
+                                    respective owners.</p>
                             </div>
-                            <p class="footer__email">help@rpclub.ru</p>
-                            <p class="footer__description">CLUB RP is not affiliated with or endorsed by Take-Two,
-                                Rockstar
-                                Interactive, or any respective subsidiaries, entities, or individuals belonging to their
-                                respective owners.</p>
-                        </div>
-                        <div class="footer__center">
-                            <div class="footer__nav">
-                                <h3 class="footer__nav-title">НАВИГАЦИЯ</h3>
-                                <ul class="footer__nav-list">
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Главная</a></li>
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">О проекте</a></li>
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Скидочная
-                                            подписка</a>
-                                    </li>
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Форум</a></li>
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">WIKI</a></li>
-                                </ul>
-                            </div>
-                            <div class="footer__nav">
-                                <h3 class="footer__nav-title">ИГРОКУ</h3>
-                                <ul class="footer__nav-list">
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Форум</a></li>
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Магазин
-                                            продуктов</a>
-                                    </li>
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Пополнить счет</a>
-                                    </li>
-                                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Авторизоваться</a>
-                                    </li>
-                                </ul>
+                            <div class="footer__center">
+                                <div class="footer__nav">
+                                    <h3 class="footer__nav-title">НАВИГАЦИЯ</h3>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Главная</a>
+                                        </li>
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">О проекте</a>
+                                        </li>
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Скидочная
+                                                подписка</a>
+                                        </li>
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Форум</a></li>
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">WIKI</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__nav">
+                                    <h3 class="footer__nav-title">ИГРОКУ</h3>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Форум</a></li>
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Магазин
+                                                продуктов</a>
+                                        </li>
+                                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Пополнить
+                                                счет</a>
+                                        </li>
+                                        <li class="footer__nav-item"><a href="#"
+                                                class="footer__nav-link">Авторизоваться</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="footer__right">
